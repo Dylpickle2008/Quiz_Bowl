@@ -41,12 +41,12 @@
     color: white; 
 }
 
-}
 
 .score{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .sub-head{
