@@ -1,40 +1,63 @@
-body{
-    background-color:#00acdf; 
+.background{
+    background-color: navy; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100%;
+    min-height: 100vh;
 }
 
-.outer-container{
+.card{
     display: flex;
-    justify-content: center; 
+    flex-direction: column;
     align-items: center; 
     border: 5px solid black;
-    width: 300px; 
-    height: 800px; 
-    background-color: bisque; 
-    gap: 20px; 
-    flex-wrap: wrap; 
-    align-content: center;
-    opacity: 0.70;
-    transition: 0.3s;
-    box-shadow: 0 20px 20px 0 black;
-    border-radius: 5px;
+    width: 200px; 
+    height: 400px; 
+    background-color: teal;
+    color: black; 
+    opacity: 0.8
+}
+
+.card:hover{
+    opacity: 1
 }
 
 .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px; 
+}
+
+.button{
     display: flex; 
+    flex-direction: column;
+    align-items: center; 
+}
+
+.button:hover{
+    color: white; 
+}
+
 }
 
 .score{
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sub-head{
-    display: flex; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .input-container{
-    display: flex; 
-}
-
-.submit{
-    display: flex; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
