@@ -21,17 +21,17 @@
 }
 
 .card:hover{
-    opacity: 1
+    opacity: 1;
 }
 
-.title{
+.title-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 60px; 
 }
 
-.button{
+.button-container{
     display: flex; 
     flex-direction: column;
     align-items: center; 
@@ -42,14 +42,14 @@
 }
 
 
-.score{
+.score-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
 
-.sub-head{
+.question-container{
     display: flex;
     flex-direction: column;
     align-items: center;

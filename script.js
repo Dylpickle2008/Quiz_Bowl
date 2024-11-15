@@ -3,7 +3,7 @@ let answerList = ['81', '4', 'NY State'];
 let score = 0;
 let questionIndex = 0;
 
-const question = document.querySelector('.question-container')
+const question = document.querySelector('.question-container');
 const button = docuement.querySelector('.button-container');
 const input = document.querySelector('#input-field');
 let scoreContainer = document.querySelector('.score-container');
@@ -29,7 +29,7 @@ let submitFunction = () =>{
 let endGame = () =>{
     if(questionIndex > 2){
         scoreContainer.textContent = "Final Score: " + score; 
-        question.textContent = "Congratulations: Play Again!";
+        question.textContent = "Congratulations: play again!";
         input.style.display = "none";
         button.style.display = "none";
     }
