@@ -1,13 +1,14 @@
-let questionList = ['How old is Joe Biden?', 'What is 2 + 2?', 'Where do we live?'];
-let answerList = ['81', '4', 'NY State'];
+let questionList = ['How old is Joe Biden?', 'What is 2 + 2?', 'Where do we live?', 'What is the capital of CA?', 'Who has the most world series titles?', 'What is the tallest building in the world?', 'Who is the most infamous Mongol leader?'];
+let answerList = ['81', '4', 'New York', 'Sacramento', 'Yankees', 'Burj Khalifa', 'Genghis Khan'];
 let score = 0;
 let questionIndex = 0;
 
 const question = document.querySelector('.question-container');
-const button = docuement.querySelector('.button-container');
+const button = document.querySelector('.button-container');
 const input = document.querySelector('#input-field');
 let scoreContainer = document.querySelector('.score-container');
 
+console.log(question); 
 question.textContent = questionList[questionIndex];
 
 let submitFunction = () =>{
@@ -27,7 +28,7 @@ let submitFunction = () =>{
 }
 
 let endGame = () =>{
-    if(questionIndex > 2){
+    if(questionIndex > 10){
         scoreContainer.textContent = "Final Score: " + score; 
         question.textContent = "Congratulations: play again!";
         input.style.display = "none";
